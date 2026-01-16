@@ -333,14 +333,14 @@
     <!-- Newsletter -->
 <section class="container-custom mb-24">
     <div
-        class="bg-gradient-to-br from-indigo-900 via-purple-900 to-blue-900 rounded-[2rem] p-8 md:p-16 text-center relative overflow-hidden shadow-2xl">
+        class="bg-gradient-to-br from-indigo-50 via-purple-50 to-blue-50 dark:from-indigo-900 dark:via-purple-900 dark:to-blue-900 rounded-[2rem] p-8 md:p-16 text-center relative overflow-hidden shadow-2xl transition-colors duration-300">
 
         <!-- Decor dots -->
         <div class="absolute top-0 left-0 w-full h-full overflow-hidden opacity-20 pointer-events-none">
             <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
                 <defs>
                     <pattern id="dots" width="40" height="40" patternUnits="userSpaceOnUse">
-                        <circle cx="2" cy="2" r="2" fill="white"></circle>
+                        <circle cx="2" cy="2" r="2" class="fill-indigo-900 dark:fill-white"></circle>
                     </pattern>
                 </defs>
                 <rect width="100%" height="100%" fill="url(#dots)"></rect>
@@ -348,22 +348,23 @@
         </div>
 
         <div class="relative z-10">
-            <h2 class="text-3xl md:text-5xl font-bold mb-6 text-white tracking-tight">Subscribe to our
-                newsletter</h2>
-            <p class="text-gray-300 mb-10 max-w-lg mx-auto text-lg">Get the latest posts delivered right to
+            <h2 class="text-3xl md:text-5xl font-bold mb-6 text-gray-900 dark:text-white tracking-tight transition-colors">Subscribe to our
+                newsletter </h2>
+            <p class="text-gray-600 dark:text-gray-300 mb-10 max-w-lg mx-auto text-lg transition-colors">Get the latest posts delivered right to
                 your
                 inbox. No spam, just good content.</p>
             <form class="flex flex-col sm:flex-row items-center justify-center gap-3 max-w-md mx-auto">
                 <input type="email" placeholder="Enter your email"
-                    class="w-full px-6 py-4 rounded-full bg-white/10 border border-white/20 text-white placeholder-gray-400 focus:outline-none focus:bg-white/20 focus:border-white transition-all backdrop-blur-sm"
+                    class="w-full px-6 py-4 rounded-full bg-white border border-gray-200 text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent dark:bg-white/10 dark:border-white/20 dark:text-white dark:placeholder-gray-400 dark:focus:bg-white/20 dark:focus:border-white transition-all backdrop-blur-sm"
                     required>
                 <button type="submit"
-                    class="w-full sm:w-auto px-8 py-4 bg-white text-black rounded-full font-bold hover:bg-gray-100 transition-colors shadow-lg">Subscribe</button>
+                    class="w-full sm:w-auto px-8 py-4 bg-gray-900 text-white dark:bg-white dark:text-black rounded-full font-bold hover:bg-gray-800 dark:hover:bg-gray-100 transition-colors shadow-lg">Subscribe</button>
             </form>
         </div>
 
     </div>
 </section>
+
     <!-- Latest Posts Grid -->
     <section class="container-custom mb-32">
         <div class="flex items-center justify-between mb-8 border-b border-gray-200 dark:border-white/10 pb-4">
